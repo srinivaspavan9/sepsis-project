@@ -141,11 +141,13 @@ banner
     background-color: rgba(12, 184, 182) !important;
 }
 #banner{
-	background: url('../img/bg-banner.jpg') no-repeat fixed;
+
+    background: url('../awareness/bg-banner.jpg') no-repeat;
 	background-size: cover;
 	min-height: 650px;
 	position: relative;
 }
+
 @media (max-width: 1024px){
   #banner{
     background-attachment: scroll;
@@ -170,6 +172,7 @@ banner
 	text-transform: uppercase;
 	padding-bottom:15px;
 }
+
 .btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
 	margin-top: 30px;
 	padding: 10px 20px;
@@ -190,28 +193,12 @@ banner
     padding-top: 8px;
     display: inline-block;
 }
-/***************************************
-services
-***************************************/
-.icon i{
-	color: #0cb8b6;
-	font-size: 45px;
-	margin-bottom: 25px;
-}
-.service-info{
-	margin-bottom: 20px;
-}
-.icon-info h4{
-	padding-bottom: 15px;
-}
-.icon-info p{
-	font-size: 15px !important;
-}
+
 /***************************************
 cta-1
 ***************************************/
 .schedule-tab {
-	background-color: #0CB8B6;
+	background-color: RGBA(13, 70, 83, 0.78);
 	float: left;
 }
 .medi-info{
@@ -229,10 +216,10 @@ cta-1
 .medi-info-btn, .medi-info-btn:hover, .medi-info-btn:focus {
     margin: 15px 0px 5px;
     display: inline-block;
-    border: solid white 2px;
+    border: solid cinnamon 2px;
     padding: 3px 8px;
     font-size: 12px;
-    color: #fff;
+    color:#B22222;
     font-weight: 400 !important;
     cursor: pointer;
 }
@@ -361,7 +348,9 @@ testimonial
 cta -2
 ***************************************/
 #cta-2{
-	background-color: rgb(41, 48, 46);
+	/*background-color: rgb(41, 48, 46);*/
+	background-color: RGBA(13, 70, 83, 0.78);
+
 }
 .white{
 	color: #fff;
@@ -418,6 +407,7 @@ contact us
     font-weight:600;
     margin-bottom:15px;
 }
+
 
 #errormessage {
     color: red;

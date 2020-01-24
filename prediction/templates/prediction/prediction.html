@@ -1,0 +1,139 @@
+{% extends "awareness/base.html"%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Sepsis Form</h1>
+    <center>
+        {%block content%}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--<form action="/formhandle/" method="POST">
+            {% csrf_token %}
+            <label>Gender:</label>
+                <select name="gender">
+                    <option value="0">Male </option>
+                    <option value="1">Female </option>
+                </select><br>
+            <label>Heart Rate:</label>
+               <select name="heartrate">
+                    <option value="normal">Normal </option>
+                    <option value="abnormal">Abnormal </option>
+                   <option value="missing">Missing</option>
+                </select><br>
+            <label>Temperature :</label>
+                <select name="temp">
+                    <option value="normal">Normal </option>
+                    <option value="abnormal">Abnormal </option>
+                   <option value="missing">Missing</option>
+                </select><br>
+            <label>Age :</label>
+            <select name="age">
+                    <option value="child/adult">Child/Adult</option>
+                    <option value="old">Old</option>
+                </select><br>
+            <label>O2 stat :</label>
+                <select name="oxygen">
+                    <option value="normal">Normal </option>
+                    <option value="abnormal">Abnormal </option>
+                   <option value="missing">Missing</option>
+                </select><br>
+            <label>Blood Pressure :</label>
+            <select name="bp">
+                    <option value="normal">Normal </option>
+                    <option value="abnormal">Abnormal </option>
+                   <option value="missing">Missing</option>
+                </select><br>
+            <label>Resp :</label>
+            <select name="resp">
+                    <option value="normal">Normal </option>
+                    <option value="abnormal">Abnormal </option>
+                   <option value="missing">Missing</option>
+                </select><br>
+            <label>ICULOS :</label>
+            <input type="text" name="iculos"><br>
+            <label>HospAdmTime :</label>
+            <input type="text" name="time"><br>
+            <input type="submit" name="submit">
+        </form>-->
+        <div class="container py-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form action="/formhandle/" method="POST">
+                {% csrf_token %}
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="gender">Gender</label>
+                        <select class="form-control selcls" id="gender" name="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="heartrate">Heart Rate</label>
+                        <input type="text" class="form-control" id="heartrate" placeholder="Heart Rate" name="heartrate">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="temperature">Temperature</label>
+                        <input type="text" class="form-control" id="temperature" placeholder="Temperature" name="temp">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="age">Age</label>
+                        <input type="text" class="form-control" id="age" placeholder="Age" name="age">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="oxystat">O2 stat</label>
+                        <input type="text" class="form-control" id="oxystat" placeholder="o2 stat" name="oxygen">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="bp">Blood Pressure</label>
+                        <input type="text" class="form-control" id="bp" placeholder="Blood Pressure" name="bp">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="resp">Resp</label>
+                        <input type="text" class="form-control" id="resp" placeholder="Resp" name="resp">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="iculos">ICULOS</label>
+                        <input type="text" class="form-control" id="iculos" placeholder="ICULOS" name="iculos">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="hospadmtime">Hosp Adm Time</label>
+                        <input type="text" class="form-control" id="hospadmtime" placeholder="Hosp Adm Time">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <!--<pre>
+                </pre>-->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                       <!--  <label for="result">Result</label>
+                        <input type="text" class="form-control" id="result" placeholder="Result">
+ -->                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+        <p><b>Result :{{val}}</b></p>
+        {% endblock content%}
+    </center>
+</body>
+</html>
