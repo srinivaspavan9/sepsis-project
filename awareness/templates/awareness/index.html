@@ -8,7 +8,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sepsis</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
   <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
@@ -16,12 +15,6 @@
   <link rel="stylesheet" type="text/css" href="{% static 'awareness/bootstrap.min.css'%}">
   <link rel="stylesheet" type="text/css" href="{% static 'awareness/style.css'%}">
 
-  <!-- =======================================================
-    Theme Name: Medilab
-    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -33,17 +26,17 @@
           <div class="col-md-12">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
 <!--             <a class="navbar-brand" href="#"><img src="{% static 'awareness/logo.png' %}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>-->
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="{% url 'home'%}">Home</a></li>
                 <li class=""><a href="{% url 'form-handle'%}">Test</a></li>
-                <li class=""><a href="#education">Education</a></li>
+                <li class=""><a href="#education">Awareness</a></li>
                  <li class=""><a href="#about">About</a></li>
                 <li class=""><a href="#contact">Contact</a></li>
               </ul>
@@ -58,12 +51,9 @@
               <img src="{% static 'awareness/sepsis1.png' %}" class="img-responsive">
           </div>-->
             <div class="banner-text text-center">
-              <h1 class="white">Take a Sepsis test now !!</h1>
-              <p>Suffering from any infection ?<br>The first step of any treatment is identifying your problem.</p>
-              <a href="#contact" class="btn btn-appoint">Take a test now.</a>
-            </div>
-            <div class="overlay-detail text-center">
-              <a href="#service"><i class="fa fa-angle-down"></i></a>
+              <h1 class="white">Predict Your Patient's Condition Now  !!!</h1>
+              <p>Click the below button to test .</p>
+              <a href="{% url 'form-handle'%}" class="btn btn-appoint" style="font-size:15px;">Test</a>
             </div>
           </div>
         </div>
@@ -82,33 +72,38 @@
           <div class="col-md-4 col-sm-4 bor-left">
             <div class="mt-boxy-color"></div>
             <div class="medi-info">
-              <h3>Patients and Family</h3>
-              <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <h3 style="font-size:25px;">What is sepsis?</h3>
+              <p style="font-size:16px;">Sepsis is the body’s overwhelming and life-threatening response to infection which can lead to tissue damage, organ failure, and death. Learn more about the symptoms of sepsis, which kills 270,000 Americans each year. </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="medi-info">
-              <h3>Get involved</h3>
-              <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <h3 style="font-size:25px;">It's About Time</h3>
+              <p style="font-size:16px;">It’s About Time a national initiative to raise awareness of sepsis and the urgent need to seek treatment when symptoms are recognized.
+                Early detection is the best hope to survive and limit disabilities when sepsis is present </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 mt-boxy-3">
             <div class="mt-boxy-color"></div>
             <div class="time-info">
-              <h3>Opening Hours</h3>
+              <h3 style="font-size:25px;">Signs of sepsis</h3>
               <table style="margin: 8px 0px 0px;" border="1">
                 <tbody>
                   <tr>
-                    <td>Monday - Friday</td>
-                    <td>8.00 - 17.00</td>
+                    <td>1)Temperature</td>
+                    <td>Higher or lower than normal</td>
                   </tr>
                   <tr>
-                    <td>Saturday</td>
-                    <td>9.30 - 17.30</td>
+                    <td>2) Infection</td>
+                    <td>May have signs and symptoms of an infection</td>
                   </tr>
                   <tr>
-                    <td>Sunday</td>
-                    <td>9.30 - 15.00</td>
+                    <td>3) Mental Decline</td>
+                    <td>Confused,sleepy,difficult to rouse </td>
+                  </tr>
+                <tr>
+                    <td>4) Extremely Ill</td>
+                    <td>Severe pain or discomfort </td>
                   </tr>
                 </tbody>
               </table>
@@ -126,26 +121,22 @@
       <div class="row">
         <div class="col-md-3 col-sm-4 col-xs-12">
           <div class="section-title">
-            <h2 class="head-title lg-line">The Medilap <br>Ultimate Dream</h2>
+            <h2 class="head-title lg-line">Sepsis is  <br>Life Threatening</h2>
             <hr class="botm-line">
-            <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            <p class="sec-para">Early detection and antibiotic treatment of sepsis are critical for improving sepsis outcomes, where each hour of delayed treatment has been associated with roughly an 4-8% increase in mortality </p>
             <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
           </div>
         </div>
         <div class="col-md-9 col-sm-8 col-xs-12">
-          <div style="visibility: visible;" class="col-sm-9 more-features-box">
-            <div class="more-features-box-text">
-              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
                 <h3>It's something important you want to know.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
+                <p>Early detection is the best hope to survive and limit disabilities when sepsis is present.</p>
               </div>
             </div>
-            <div class="more-features-box-text">
-              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+         <div class="col-md-9 col-sm-8 col-xs-12">
               <div class="more-features-box-text-description">
                 <h3>It's something important you want to know.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
+                <p>Sepsis survivors and family members of people who have had sepsis may find themselves experiencing emotional and psychological issues that can make it difficult to move forward.</p>
               </div>
             </div>
           </div>
@@ -153,70 +144,16 @@
       </div>
     </div>
   </section>
-  <!--/ about-->
-
-  <!--testimonial-->
-  <section id="testimonial" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="ser-title">see what patients are saying?</h2>
-          <hr class="botm-line">
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="testi-details">
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-             <a href="#" class="medi-info-btn">READ MORE</a>
-          </div>
-          <div class="testi-info">
-            <!-- User Image -->
-            <a href="#"><img src="{% static 'awareness/thumb.png' %}" alt="" class="img-responsive"></a>
-            <!-- User Name -->
-            <h3>Alex<span>Texas</span></h3>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="testi-details">
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-             <a href="#" class="medi-info-btn">READ MORE</a>
-          </div>
-          <div class="testi-info">
-            <!-- User Image -->
-            <a href="#"><img src="awareness/thumb.png" alt="" class="img-responsive"></a>
-            <!-- User Name -->
-            <h3>Alex<span>Texas</span></h3>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="testi-details">
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-             <a href="#" class="medi-info-btn">READ MORE</a>
-          </div>
-          <div class="testi-info">
-            <!-- User Image -->
-            <a href="#"><img src="awareness/thumb.png" alt="" class="img-responsive"></a>
-            <!-- User Name -->
-            <h3>Alex<span>Texas</span></h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ testimonial-->
   <!--cta 2-->
   <section id="cta-2" class="section-padding" style="background-color: RGBA(13,70,83,0.78);">
     <div class="container" >
       <div class=" row">
         <div class="col-md-2"></div>
         <div class="text-right-md col-md-4 col-sm-4">
-          <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
+          <h2 class="section-title white lg-line">« Septic Shock »</h2>
         </div>
-        <div class="col-md-4 col-sm-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typek
-          <p class="text-right text-primary"><i>— Medilap Healthcare</i></p>
+        <div class="col-md-4 col-sm-5" >
+         Septic shock  is a potentially fatal medical condition that occurs when sepsis, which is organ injury or damage in response to infection, leads to dangerously low blood pressure and abnormalities in cellular metabolism
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -234,15 +171,15 @@
         <div class="col-md-4 col-sm-4">
           <h3>Contact Info</h3>
           <div class="space"></div>
-          <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br> New York, NY 17022</p>
+          <p>Chaitanya Bharathi institute of technology <br> Gandipet, Hyderabad</p>
           <div class="space"></div>
-          <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
+          <p>info@gehealthcare.com</p>
           <div class="space"></div>
-          <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
+          <p>+91 9848022338 </p>
         </div>
         <div class="col-md-8 col-sm-8 marb20">
           <div class="contact-info">
-            <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
+            <h3 class="cnt-ttl">Having Any Query!  Write to us</h3>
             <div class="space"></div>
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>

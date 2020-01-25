@@ -75,8 +75,8 @@
                     <div class="col-sm-6">
                         <label for="gender">Gender</label>
                         <select class="form-control selcls" id="gender" name="gender">
-                            <option>Male</option>
-                            <option>Female</option>
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
                         </select>
                     </div>
                     <div class="col-sm-6">
@@ -101,7 +101,12 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="bp">Blood Pressure</label>
-                        <input type="text" class="form-control" id="bp" placeholder="Blood Pressure" name="bp">
+                        <select class="form-control selcls" id="bp" name="bp">
+                            <option value="low">Low (SBP<90 and DBP<60)</option>
+                            <option value="normal">Normal (SBP(90,120) and DBP(60,80))</option>
+                            <option value="elevated">Elevated (SBP(120,140) and DBP(80,90))</option>
+                            <option value="high">High (SBP>140 and DBP>90)</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -115,7 +120,7 @@
                     </div>
                     <div class="col-sm-3">
                         <label for="hospadmtime">Hosp Adm Time</label>
-                        <input type="text" class="form-control" id="hospadmtime" placeholder="Hosp Adm Time">
+                        <input type="text" class="form-control" id="hospadmtime" placeholder="Hosp Adm Time" name="time">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
