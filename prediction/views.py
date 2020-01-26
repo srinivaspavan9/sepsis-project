@@ -4,7 +4,8 @@ import pickle
 from sklearn.externals import joblib
 import pickle
 from sklearn.preprocessing import MinMaxScaler
-
+def graphs(request):
+    return render(request,'prediction/graphs.html')
 
 def formhandle(request):
     if(request.method=='POST'):
@@ -88,18 +89,18 @@ def formhandle(request):
         else:
             oxy='Missing'
         #New code ends here
-        mymodel=joblib.load('C:\\Users\\srinivas pavan\\PycharmProjects\\Prediction\\seppred\\sepsis\\log_model.pkl')
+        mymodel=joblib.load('C:\\Users\\srinivas pavan\\PycharmProjects\\Prediction\\seppred\\sepsis\\log_model2.pkl')
         mydf = pd.DataFrame({'Gender': int(gen), 'custom_hr': hr, 'custom_temp': temp, 'custom_age': age,
                              'custom_o2stat': oxy, 'custom_bp': bp, 'custom_resp': resp, 'ICULOS': int(iculos),
                              'HospAdmTime': -2.45}, index=[0])
         print(mydf)
         val=mymodel.predict(mydf)
-        if val==[0]:
-            val='No chance of sepsis'
+        if val==[0] :
+            val=0
         else:
-            val='Chances of sepsis are high'
+            val=1
+
         print('myvalue :'+str(val))
         return render(request,'prediction/prediction.html',{'val':val})
     else:
         return render(request,'prediction/prediction.html')
-

@@ -5,3 +5,6 @@ def home(request):
 
 def base(request):
     return render(request,'awareness/base.html')
+
+def education(request):
+    return render(request,'awareness/education.html')

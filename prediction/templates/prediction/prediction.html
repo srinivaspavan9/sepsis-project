@@ -18,54 +18,16 @@
         <br>
         <br>
         <br>
-        <!--<form action="/formhandle/" method="POST">
-            {% csrf_token %}
-            <label>Gender:</label>
-                <select name="gender">
-                    <option value="0">Male </option>
-                    <option value="1">Female </option>
-                </select><br>
-            <label>Heart Rate:</label>
-               <select name="heartrate">
-                    <option value="normal">Normal </option>
-                    <option value="abnormal">Abnormal </option>
-                   <option value="missing">Missing</option>
-                </select><br>
-            <label>Temperature :</label>
-                <select name="temp">
-                    <option value="normal">Normal </option>
-                    <option value="abnormal">Abnormal </option>
-                   <option value="missing">Missing</option>
-                </select><br>
-            <label>Age :</label>
-            <select name="age">
-                    <option value="child/adult">Child/Adult</option>
-                    <option value="old">Old</option>
-                </select><br>
-            <label>O2 stat :</label>
-                <select name="oxygen">
-                    <option value="normal">Normal </option>
-                    <option value="abnormal">Abnormal </option>
-                   <option value="missing">Missing</option>
-                </select><br>
-            <label>Blood Pressure :</label>
-            <select name="bp">
-                    <option value="normal">Normal </option>
-                    <option value="abnormal">Abnormal </option>
-                   <option value="missing">Missing</option>
-                </select><br>
-            <label>Resp :</label>
-            <select name="resp">
-                    <option value="normal">Normal </option>
-                    <option value="abnormal">Abnormal </option>
-                   <option value="missing">Missing</option>
-                </select><br>
-            <label>ICULOS :</label>
-            <input type="text" name="iculos"><br>
-            <label>HospAdmTime :</label>
-            <input type="text" name="time"><br>
-            <input type="submit" name="submit">
-        </form>-->
+        {%if val == 0 %}
+        <div class="alert alert-success" role="alert" style="margin:15px;border-radius:10px;">
+            <h1> Possibility of sepsis is low.</h1>
+        </div>
+        {% endif %}
+        {% if val == 1  %}
+        <div class="alert alert-danger" role="alert" style="margin:15px;border-radius:10px;">
+            <h1> Possiblity of sepsis is high.</h1>
+        </div>
+        {% endif %}
         <div class="container py-5">
     <div class="row">
         <div class="col-md-10 mx-auto">
@@ -137,7 +99,7 @@
         </div>
     </div>
 </div>
-        <p><b>Result :{{val}}</b></p>
+        <a class="btn btn-primary" href="{% url 'graphs' %}" style="margin-left:500px;margin-bottom:20px;">Analysis</a>
         {% endblock content%}
     </center>
 </body>
